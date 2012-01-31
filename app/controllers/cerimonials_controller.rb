@@ -1,0 +1,3 @@
+class CerimonialsController < ApplicationController
+end
+
