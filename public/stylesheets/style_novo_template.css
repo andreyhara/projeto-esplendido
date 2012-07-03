@@ -1,0 +1,329 @@
+/*
+Theme Name: Raadhuis
+Theme URI: http://www.raadhuisvangoudriaan.nl/
+Description: Raadhuis wordpress thema
+Version: 1.0
+Author: Kersvers
+Template: raadhuis
+Author URI: http://www.krsvrs.nl
+*/
+
+@charset "UTF-8";
+
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}
+legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+
+body{
+background-color: #edeae0;
+font-family: Georgia;
+font-size: 14px;
+color: #5b4f49;
+padding: 187px 0px 0px 0px;
+}
+
+a{
+text-decoration: none;
+}
+
+a:focus {
+outline: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+p{
+line-height: 20px;
+}
+
+h1{
+font-size: 36px;
+color: #341b0f;
+padding: 0px 0px 12px 0px;
+}
+
+h2{
+font-size: 18px;
+color: #5b4f49;
+line-height: 26px;
+}
+
+/* General layout */
+
+.wrapper{
+position: relative;
+width: 960px;
+margin: 0px auto;
+}
+
+.column-630{
+position: relative;
+float: left;
+width: 620px;
+padding: 0px 0px 0px 10px;
+}
+
+
+.column-350{
+position: relative;
+float: left;
+width: 350px;
+}
+
+#top-container{
+position: absolute;
+top:0;
+width: 100%;
+height: 187px;
+z-index: 1005;
+}
+
+#header-wrapper{
+width: 100%;
+height: 138px;
+background-color: #2c1308;
+background-image: url(images/bg-header.png);
+background-position: center bottom;
+background-repeat: repeat-x;
+border-bottom: 1px solid #402519;
+}
+
+#header{
+width: 100%;
+margin: 0 auto;
+position: relative;
+top:20px;
+left: 40%
+}
+
+/* Menu layout */
+
+#menu-wrapper{
+width: 100%;
+height: 49px; /*49*/
+background-image: url(../images/menu_novo.png);
+background-position: center top;
+background-repeat: repeat-x;
+}
+
+#menu{
+position: relative;
+width: 960px;
+margin: 0 auto;
+}
+
+#menu-raadhuis-menu a {
+float:left;
+height:46px;
+margin: 0px 25px 0px 0px;
+/*background-image: url(..images/menu.png);*/
+background-repeat: no-repeat;
+text-indent: -9999px;
+}
+
+#menu-raadhuis-menu ul {
+padding: 0;
+margin: 0;
+list-style: none;
+z-index:1000;
+}
+
+#menu-raadhuis-menu li {
+position:relative;
+float: left;
+z-index:1000;
+margin:0px;
+list-style:none;
+}
+
+#menu-item-9 a{
+width: 71px;
+background-position: 0px 0px;
+}
+
+#menu-item-19 a{
+width: 108px;
+background-position: -101px 0px;
+}
+
+#menu-item-18 a{
+width: 146px;
+background-position: -239px 0px;
+}
+
+#menu-item-116 a{
+width: 83px;
+background-position: -415px 0px;
+}
+
+#menu-item-62 a{
+width: 84px;
+background-position: -528px 0px;
+}
+
+#menu-item-16 a{
+width: 146px;
+background-position: -641px 0px;
+}
+
+/* active */
+
+#menu-item-9.current-menu-item a,
+#menu-item-9.current-menu-item a:hover{
+width: 71px;
+background-position: 0px -47px;
+}
+
+#menu-item-19.current-menu-item a,
+#menu-item-19.current-menu-item a:hover{
+width: 108px;
+background-position: -101px -47px;
+}
+
+#menu-item-18.current-menu-item a,
+#menu-item-18.current-menu-item a:hover{
+width: 146px;
+background-position: -239px -47px;
+}
+
+#menu-item-116.current-menu-item a,
+#menu-item-116.current-menu-parent a,
+#menu-item-116.current-post-ancestor a,
+#menu-item-116.current-category-ancestor a,
+#menu-item-116.current-menu-item a:hover,
+#menu-item-116.current-menu-parent a:hover,
+#menu-item-116.current-post-ancestor a:hover,
+#menu-item-116.current-category-ancestor a:hover{
+width: 83px;
+background-position: -415px -47px;
+}
+
+#menu-item-62.current-menu-item a,
+#menu-item-62.current-menu-item a:hover{
+width: 84px;
+background-position: -528px -47px;
+}
+
+#menu-item-16.current-menu-item a,
+#menu-item-16.current-menu-item a:hover{
+width: 146px;
+background-position: -641px -47px;
+}
+
+/* hover */
+
+#menu-item-9 a:hover{
+background-position: 0px -94px;
+}
+
+#menu-item-19 a:hover{
+background-position: -101px -94px;
+}
+
+#menu-item-18 a:hover{
+background-position: -239px -94px;
+}
+
+#menu-item-116 a:hover{
+background-position: -415px -94px;
+}
+
+#menu-item-62 a:hover{
+background-position: -528px -94px;
+}
+
+#menu-item-16 a:hover{
+background-position: -641px -94px;
+}
+
+#btn-reservation{
+position: absolute;
+top: 0; right: 0;
+margin: -19px -17px 0px 0px;
+width: 191px;
+height: 71px;
+/*background-image: url(img/btn-reservation.png);*/
+background-repeat: no-repeat;
+text-indent: -9999px;
+}
+
+#btn-reservation:hover{
+background-position: 0px -71px;
+}
+
+.date{
+font-size: 28px !important;
+display: block;
+}
+
+#searchform{
+display: block;
+width: 186px;
+height: 33px;
+background-color: #fff;
+border: 1px solid #c7c4bb;
+}
+
+#searchform input {
+float: left;
+display: block;
+width: 131px;
+height: 17px;
+margin: 9px 0px 0px 9px;
+font-size: 12px;
+color: #a49c94;
+font-style: italic;
+outline-width:0;
+border:0;
+-webkit-appearance: none;
+}
+
+#searchform input.focus{
+font-style: normal;
+color: #5b4f49;
+}
+
+#searchform input.searchbutton{
+float: right;
+display: block;
+cursor: pointer;
+margin: 1px 3px 0px 0px;
+text-indent: -999px;
+width: 29px;
+height: 29px;
+background-image: url(img/bg-searchbutton.gif);
+background-repeat: no-repeat;
+font-size: 0;
+line-height: 0;
+}
+
+#searchform input.searchbutton:hover{
+background-position: 0px -29px;
+}
+
+#footer-wrapper{
+width: 100%;
+background-color: #2c1308;
+color: #edeae0;
+padding: 15px 0px;
+font-size: 16px;
+font-style: italic;
+margin: 30px 0px 0px 0px;
+}
+
+#kersverslink{
+position: absolute;
+bottom: 0; right: 0;
+z-index: 400;
+color: #a49c93;
+text-decoration: none;
+font-family:Arial;
+font-size: 10px;
+}
+

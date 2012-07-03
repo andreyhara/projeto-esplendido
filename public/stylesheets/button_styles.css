@@ -148,5 +148,12 @@
 	height: 100px;
 }
 
+#body_pagina_inicial{
+	background: white;
+  height: 400px;
+	width: 1024px;
+	position:absolute; left:20px; top:180px;
+}
+
 }
 

@@ -1,7 +1,13 @@
 Esplendido::Application.routes.draw do
 
-  resources :homes
-  resources :cerimonials
+root :to => "cerimonial#index"
+
+get "cerimonial/index"
+get "cerimonial/fotos"
+get "cerimonial/contato"
+
+
+
 
 
   # The priority is based upon order of creation:
