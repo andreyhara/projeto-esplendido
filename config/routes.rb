@@ -3,12 +3,13 @@ Esplendido::Application.routes.draw do
 #root :to => "cerimonial#index"
 
 get "cerimonial/index"
+get "cerimonial/espaco"
 get "cerimonial/fotos"
+get "cerimonial/servicos"
+get "cerimonial/imprensa"
+get "cerimonial/decoracao"
+get "cerimonial/localizacao"
 get "cerimonial/contato"
-
-
-
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

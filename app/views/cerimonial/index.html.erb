@@ -31,23 +31,24 @@
 	</div>
 	<div class="column-350">
 		<div id="box-home-menu">
-			<h3>Cerimonial</h3>
+			<h3>O Cerimonial</h3>
 
 			<p>O Esplendido Cerimonial faz a organização de sua festa com a categoria e profissionalismo, prestando assessoria na condução de maneira a assegurar o glamour de sua festa.
         <br />Toda nossa experiência colocada à sua disposição, no momento que você mais vai precisar, sem custo adicional.</p>
 			<span>Estamos a sua disposição!</span>
 			<ul>
-				<li><a href="" title="Fotos">Fotos</a><span>Veja as fotos do cerimonial</span></li>
+				<li>
+				<%= link_to  "Fotos", {:controller=>"cerimonial", :action=>"fotos" } %>
+				<span>Veja as fotos do cerimonial</span>
 			</ul>
-			<a id="btn-tablereservation" href="/reserveren-raadhuis" title="Parceiros">Entrar em contato</a>
 		</div>
 
 		<div id="box-home-contact">
-			Contato<br />
+			<h3>Contato</h3>
 			Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes
 			<span id="contact-phone">Telefone: (027) 3322-7707</span>
 			<a href="mailto:contato@esplendidocerimonial.com.br" title="E-mail contato@esplendidocerimonial.com.br">contato@esplendidocerimonial.com.br</a>
-			<a href="/caminho" title="Como chegar">Como chegar</a>
+			<%= link_to  "Como chegar", {:controller=>"cerimonial", :action=>"localizacao" } %>
 			<span id="contact-parking">xxxxxxxxxxxxxxxxx</span>
 		</div>
 

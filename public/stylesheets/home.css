@@ -175,6 +175,13 @@ font-size: 13px;
 line-height: 20px;
 }
 
+#box-home-contact h3{
+font-size: 17px;
+font-family: Verdana;
+color:  #5b4f49;
+padding: 0px 0px 15px 0px;
+}
+
 #box-home-contact a{
 display: block;
 color: #467E94;

@@ -31,11 +31,10 @@
 
 </head>
 <body class="home">
-
 <div id="top-container">
 	<div id="header-wrapper">
 		<div id="header">
-			<a href="http://www.endereco" title=""><img src="../images/Logo(1).png" alt="" /></a>
+   		<%= link_to image_tag("../images/Logo(1).png", :border=>0),{ :controller=> "cerimonial", :action => 'index'} %>
 		</div>
 	</div>
 	<div id="menu-wrapper">
@@ -53,7 +52,6 @@
 		</div>
 	</div>
 </div>
-<br clear="all" />
 <%= yield %>
 <div id="footer-wrapper">
 	<div class="wrapper">Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes, Telefone: (027) 3322-7707, contato@esplendidocerimonial.com.br </div>
