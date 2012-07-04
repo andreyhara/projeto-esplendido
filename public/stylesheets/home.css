@@ -82,6 +82,136 @@ width: 980px;
 margin: 0 auto;
 }
 
+#box-texto{
+top: 0px;
+position: absolute;
+background-color: #ffffff;
+width: 800px;
+height: 400px;
+border: 2px solid #e1ddd1;
+padding: 17px;
+margin: 50px 0px 0px 40px;
+font-size: 13px;
+line-height: 20px;
+z-index: 1000;
+
+}
+
+#box-texto h3{
+font-size: 17px;
+font-family: Verdana;
+color:  #5b4f49;
+padding: 0px 0px 15px 0px;
+}
+
+#box-texto p{
+padding: 0px 0px 5px 0px;
+}
+
+#box-texto span{
+font-size: 11px;
+color: #a49c94;
+font-style: italic;
+}
+
+#box-localizacao{
+top: 0px;
+position: absolute;
+background-color: #ffffff;
+width: 800px;
+height: 600px;
+border: 2px solid #e1ddd1;
+padding: 17px;
+margin: 50px 0px 0px 40px;
+font-size: 13px;
+line-height: 20px;
+z-index: 1000;
+
+}
+
+#box-localizacao h3{
+font-size: 17px;
+font-family: Verdana;
+color:  #5b4f49;
+padding: 0px 0px 15px 0px;
+}
+
+#box-localizacao p{
+padding: 0px 0px 5px 0px;
+}
+
+#box-localizacao span{
+font-size: 11px;
+color: #a49c94;
+font-style: italic;
+}
+
+#box-contato{
+top: 0px;
+position: absolute;
+background-color: #ffffff;
+width: 440px;
+height: 400px;
+border: 2px solid #e1ddd1;
+padding: 17px;
+margin: 50px 0px 0px 40px;
+font-size: 13px;
+line-height: 20px;
+z-index: 1000;
+
+}
+
+#box-contato h3{
+font-size: 17px;
+font-family: Verdana;
+color:  #5b4f49;
+padding: 0px 0px 15px 0px;
+}
+
+#box-contato p{
+padding: 0px 0px 5px 0px;
+}
+
+#box-contato span{
+font-size: 11px;
+color: #a49c94;
+font-style: italic;
+}
+
+#box-contato-informacoes{
+top: 0px;
+left:470px;
+position: absolute;
+background-color: #ffffff;
+width: 300px;
+height: 400px;
+border: 2px solid #e1ddd1;
+padding: 17px;
+margin: 50px 0px 0px 40px;
+font-size: 13px;
+line-height: 20px;
+z-index: 1000;
+
+}
+
+#box-contato-informacoes h3{
+font-size: 17px;
+font-family: Verdana;
+color:  #5b4f49;
+padding: 0px 0px 15px 0px;
+}
+
+#box-contato-informacoes p{
+padding: 0px 0px 5px 0px;
+}
+
+#box-contato-informacoes span{
+font-size: 11px;
+color: #a49c94;
+font-style: italic;
+}
+
+
 #box-home-menu{
 background-color: #ffffff;
 width: 264px;

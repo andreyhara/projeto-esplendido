@@ -12,5 +12,13 @@ class CerimonialController < ApplicationController
 
   end
 
+  def espaco
+
+  end
+
+  def servicos
+
+  end
+
 end
 

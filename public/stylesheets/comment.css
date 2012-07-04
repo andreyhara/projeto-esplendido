@@ -1,0 +1,232 @@
+/* Comments */
+
+.post-comments {
+	margin: 0 0 40px 0;
+	height: 1%;
+}
+
+.post-comments:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.post-comments h2,
+h3#comments-title,
+h3#reply-title {
+	margin-bottom: 1em;
+	font-size: 18px;
+	font-weight: normal;
+	color: #21759B;
+}
+
+.comment,
+.trackback,
+.pingback {
+	width: 530px;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	float: left;
+	height: 1%;
+}
+
+.comment:after,
+.trackback:after,
+.pingback:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.pingback p,
+.trackback p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #aaa;
+}
+
+.comment-avatar {
+	width: 60px;
+	float: left;
+}
+
+.comment-avatar img {
+	width: 54px;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.comment-body {
+	width: 460px;
+	margin-left: 10px;
+	float: right;
+}
+
+.comment-body ul {
+	margin: 0 0 1.4em 1.2em;
+}
+
+.comment-body li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+.comment-body blockquote {
+	margin-left: 30px;
+	margin-bottom: 1.4em;
+	padding-left: 15px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 1.5;
+	border-left: 2px solid #ddd;
+}
+
+.comment-body blockquote p {
+	font-size: 1em;
+}
+
+.comment-meta {
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #777;
+}
+
+.comment-form table {
+	width: 530px;
+	border-collapse: collapse;
+}
+
+.comment-form th {
+	width: 120px;
+	padding: 2px 0 15px 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+.comment-form th label {
+	font-size: 1.3em;
+	line-height: 1.4;
+	color: #333;
+}
+
+.comment-form th p {
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #777;
+}
+
+.comment-form td {
+	padding: 5px 0 15px 24px;
+	vertical-align: top;
+}
+
+.comment-form td input {
+	width: 180px;
+	padding: 6px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #444;
+}
+
+.comment-form td textarea {
+	width: 180px;
+	padding: 6px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	line-height: 1.65;
+	font-weight: 300;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #444;
+}
+
+#submit {
+	width: auto;
+	padding: 6px 10px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	background: transparent url(images/bg-button.png) repeat-x 0 50%;
+	background-color: #21759B;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-transition: all .2s linear;
+}
+
+#submit:hover {
+	background-color: #1F536C;
+	text-decoration: none;
+}
+
+.depth-2,
+.depth-3,
+.depth-4,
+.depth-5 {
+	margin: 15px 0 0 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.depth-2 .comment-avatar {
+	text-align: right;
+}
+
+.depth-2 .comment-body p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #444;
+}
+
+.depth-2 .comment-avatar img {
+	width: 30px;
+	height: 30px;
+}
+
+.depth-3 .comment-avatar {
+	width: 100px;
+}
+
+.depth-3 .comment-body {
+	width: 420px;
+}
+
+.depth-4 .comment-avatar {
+	width: 140px;
+}
+
+.depth-4 .comment-body {
+	width: 380px;
+}
+
+.depth-5 .comment-avatar {
+	width: 180px;
+}
+
+.depth-5 .comment-body {
+	width: 340px;
+}
+
