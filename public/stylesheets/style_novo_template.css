@@ -65,7 +65,7 @@ margin: 0px auto;
 .column-630{
 position: relative;
 float: left;
-width: 620px;
+width: 600px;
 padding: 0px 0px 0px 10px;
 }
 
@@ -77,6 +77,7 @@ width: 350px;
 }
 
 #top-container{
+background-color: #2c1308;
 position: absolute;
 top:0;
 width: 100%;
@@ -85,10 +86,10 @@ z-index: 1005;
 }
 
 #header-wrapper{
-width: 100%;
+position:relative;
+width: 60%;
 height: 138px;
-background-color: #2c1308;
-background-image: url(images/bg-header.png);
+/*background-image: url(images/bg-header.png);*/
 background-position: center bottom;
 background-repeat: repeat-x;
 border-bottom: 1px solid #402519;
@@ -99,7 +100,7 @@ width: 100%;
 margin: 0 auto;
 position: relative;
 top:20px;
-left: 40%
+left: 65%
 }
 
 /* Menu layout */
@@ -297,7 +298,7 @@ margin: 1px 3px 0px 0px;
 text-indent: -999px;
 width: 29px;
 height: 29px;
-background-image: url(img/bg-searchbutton.gif);
+/*background-image: url(img/bg-searchbutton.gif);*/
 background-repeat: no-repeat;
 font-size: 0;
 line-height: 0;
