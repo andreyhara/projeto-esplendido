@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cerimonial Esplendido</title>
+  <title>Esplêndido Cerimonial</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :all %>
   <%= javascript_include_tag "jquery-latest.min.js" %>
   <%= javascript_include_tag "jquery.ui.js" %>
   <%= javascript_include_tag "default.js" %>
   <%= javascript_include_tag "home.js" %>
+  <%= javascript_include_tag "fotos.js" %>
   <%= csrf_meta_tag %>
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
@@ -30,6 +31,7 @@
 
 </head>
 <body class="home">
+
 <div id="top-container">
 	<div id="header-wrapper">
 		<div id="header">
@@ -38,22 +40,26 @@
 	</div>
 	<div id="menu-wrapper">
 		<div id="menu">
-			<ul id="menu-raadhuis-menu" class="menu">
-			<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-9"><a href="http://www.principal/">Principal</a></li>
-        <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://www.apresentacao">Apresentação</a></li>
-        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://www.fotos">Fotos</a></li>
-        <li id="menu-item-116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-116"><a href="http://www.buffet">Buffet</a></li>
-        <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="http://www.decoracao">Decoração</a></li>
-        <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="http://www.contato">Contato</a></li>
-      </ul>
+			<div id="menu-raadhuis-menu" class="menu">
+   			<%= link_to  "Principal", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Espaço", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Galeria de Fotos", {:controller=>"cerimonial", :action=>"fotos" } %>
+   			<%= link_to  "Serviços", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Imprensa", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Decoração", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Localização", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Contato", {:controller=>"cerimonial", :action=>"index" } %>
+			</div>
 		</div>
 	</div>
-</div><br clear="all" />
+</div>
+<br clear="all" />
 <%= yield %>
 <div id="footer-wrapper">
 	<div class="wrapper">Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes, Telefone: (027) 3322-7707, contato@esplendidocerimonial.com.br </div>
 </div>
 <div id="fb-root"></div>
+<br>
 </body>
 </html>
 

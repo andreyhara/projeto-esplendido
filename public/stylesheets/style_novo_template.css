@@ -81,18 +81,21 @@ background-color: #2c1308;
 position: absolute;
 top:0;
 width: 100%;
-height: 187px;
+height: 140px;
 z-index: 1005;
 }
 
+
+
 #header-wrapper{
-position:relative;
-width: 60%;
-height: 138px;
 /*background-image: url(images/bg-header.png);*/
-background-position: center bottom;
-background-repeat: repeat-x;
-border-bottom: 1px solid #402519;
+background-color: #2c1308;
+position:relative;
+width: 62%;
+height: 138px;
+background-position: left bottom;
+
+
 }
 
 #header{
@@ -106,207 +109,42 @@ left: 65%
 /* Menu layout */
 
 #menu-wrapper{
+/*background-image: url(../images/menu_new_.png);*/
+/*background-repeat: no-repeat;*/
 width: 100%;
-height: 49px; /*49*/
-background-image: url(../images/menu_novo.png);
+height: 30px;
+background-color: #341b0f;
 background-position: center top;
-background-repeat: repeat-x;
+
 }
 
 #menu{
+border: 1px white solid;
 position: relative;
-width: 960px;
-margin: 0 auto;
+width: 900px;
+margin: auto;
+text-align:center;
 }
 
 #menu-raadhuis-menu a {
-float:left;
-height:46px;
-margin: 0px 25px 0px 0px;
 /*background-image: url(..images/menu.png);*/
-background-repeat: no-repeat;
-text-indent: -9999px;
+/*background-repeat: no-repeat;*/
+text-align:center;
+float:left;
+height:30px;
+margin: 5px 25px 0px 0px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px;
+color:white;
+text-transform:uppercase;
 }
 
-#menu-raadhuis-menu ul {
-padding: 0;
-margin: 0;
-list-style: none;
-z-index:1000;
-}
-
-#menu-raadhuis-menu li {
-position:relative;
-float: left;
-z-index:1000;
-margin:0px;
-list-style:none;
-}
-
-#menu-item-9 a{
-width: 71px;
-background-position: 0px 0px;
-}
-
-#menu-item-19 a{
-width: 108px;
-background-position: -101px 0px;
-}
-
-#menu-item-18 a{
-width: 146px;
-background-position: -239px 0px;
-}
-
-#menu-item-116 a{
-width: 83px;
-background-position: -415px 0px;
-}
-
-#menu-item-62 a{
-width: 84px;
-background-position: -528px 0px;
-}
-
-#menu-item-16 a{
-width: 146px;
-background-position: -641px 0px;
-}
-
-/* active */
-
-#menu-item-9.current-menu-item a,
-#menu-item-9.current-menu-item a:hover{
-width: 71px;
-background-position: 0px -47px;
-}
-
-#menu-item-19.current-menu-item a,
-#menu-item-19.current-menu-item a:hover{
-width: 108px;
-background-position: -101px -47px;
-}
-
-#menu-item-18.current-menu-item a,
-#menu-item-18.current-menu-item a:hover{
-width: 146px;
-background-position: -239px -47px;
-}
-
-#menu-item-116.current-menu-item a,
-#menu-item-116.current-menu-parent a,
-#menu-item-116.current-post-ancestor a,
-#menu-item-116.current-category-ancestor a,
-#menu-item-116.current-menu-item a:hover,
-#menu-item-116.current-menu-parent a:hover,
-#menu-item-116.current-post-ancestor a:hover,
-#menu-item-116.current-category-ancestor a:hover{
-width: 83px;
-background-position: -415px -47px;
-}
-
-#menu-item-62.current-menu-item a,
-#menu-item-62.current-menu-item a:hover{
-width: 84px;
-background-position: -528px -47px;
-}
-
-#menu-item-16.current-menu-item a,
-#menu-item-16.current-menu-item a:hover{
-width: 146px;
-background-position: -641px -47px;
-}
-
-/* hover */
-
-#menu-item-9 a:hover{
-background-position: 0px -94px;
-}
-
-#menu-item-19 a:hover{
-background-position: -101px -94px;
-}
-
-#menu-item-18 a:hover{
-background-position: -239px -94px;
-}
-
-#menu-item-116 a:hover{
-background-position: -415px -94px;
-}
-
-#menu-item-62 a:hover{
-background-position: -528px -94px;
-}
-
-#menu-item-16 a:hover{
-background-position: -641px -94px;
-}
-
-#btn-reservation{
-position: absolute;
-top: 0; right: 0;
-margin: -19px -17px 0px 0px;
-width: 191px;
-height: 71px;
-/*background-image: url(img/btn-reservation.png);*/
-background-repeat: no-repeat;
-text-indent: -9999px;
-}
-
-#btn-reservation:hover{
-background-position: 0px -71px;
-}
 
 .date{
 font-size: 28px !important;
 display: block;
 }
 
-#searchform{
-display: block;
-width: 186px;
-height: 33px;
-background-color: #fff;
-border: 1px solid #c7c4bb;
-}
-
-#searchform input {
-float: left;
-display: block;
-width: 131px;
-height: 17px;
-margin: 9px 0px 0px 9px;
-font-size: 12px;
-color: #a49c94;
-font-style: italic;
-outline-width:0;
-border:0;
--webkit-appearance: none;
-}
-
-#searchform input.focus{
-font-style: normal;
-color: #5b4f49;
-}
-
-#searchform input.searchbutton{
-float: right;
-display: block;
-cursor: pointer;
-margin: 1px 3px 0px 0px;
-text-indent: -999px;
-width: 29px;
-height: 29px;
-/*background-image: url(img/bg-searchbutton.gif);*/
-background-repeat: no-repeat;
-font-size: 0;
-line-height: 0;
-}
-
-#searchform input.searchbutton:hover{
-background-position: 0px -29px;
-}
 
 #footer-wrapper{
 width: 100%;
@@ -314,17 +152,6 @@ background-color: #2c1308;
 color: #edeae0;
 padding: 15px 0px;
 font-size: 16px;
-font-style: italic;
 margin: 30px 0px 0px 0px;
-}
-
-#kersverslink{
-position: absolute;
-bottom: 0; right: 0;
-z-index: 400;
-color: #a49c93;
-text-decoration: none;
-font-family:Arial;
-font-size: 10px;
 }
 

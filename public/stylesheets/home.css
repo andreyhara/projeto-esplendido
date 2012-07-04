@@ -21,7 +21,7 @@ margin: 0;
 
 position: relative;
 display: none;
-width: 960px;     /*andrey  960px */
+width: 960px;
 height: 395px;
 margin: 0 auto;
 padding: 55px 0px 0px 0px;
@@ -39,6 +39,7 @@ margin: -17px 0px 0px 0px;
 }
 
 #home-intro-wrapper{
+text-align: center;
 display: none;
 position: fixed;
 bottom: 0;
@@ -50,6 +51,30 @@ background-position: center bottom;
 /*border-bottom: 1px solid #cfc6b3;*/
 }
 
+#fotos-intro{
+position: relative;
+width: 960px;
+height: 395px;
+margin: 0 auto;
+padding: 55px 0px 0px 0px;
+}
+
+
+#fotos-intro-pattern{
+width: 100%;
+position: relative;
+padding: 187px 0px 0px 0px;
+margin: -17px 0px 0px 0px;
+}
+
+#fotos-intro-wrapper{
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 484px;
+/*background-position: center bottom;*/
+
+}
 
 #home-content{
 display: none;
