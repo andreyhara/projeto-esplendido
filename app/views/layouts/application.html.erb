@@ -44,8 +44,8 @@
    			<%= link_to  "Espaço", {:controller=>"cerimonial", :action=>"espaco" } %>
    			<%= link_to  "Galeria de Fotos", {:controller=>"cerimonial", :action=>"fotos" } %>
    			<%= link_to  "Serviços", {:controller=>"cerimonial", :action=>"servicos" } %>
-   			<%= link_to  "Imprensa", {:controller=>"cerimonial", :action=>"index" } %>
-   			<%= link_to  "Decoração", {:controller=>"cerimonial", :action=>"index" } %>
+   			<%= link_to  "Imprensa", {:controller=>"cerimonial", :action=>"imprensa" } %>
+   			<%= link_to  "Decoração", {:controller=>"cerimonial", :action=>"decoracao" } %>
    			<%= link_to  "Localização", {:controller=>"cerimonial", :action=>"localizacao" } %>
    			<%= link_to  "Contato", {:controller=>"cerimonial", :action=>"contato" } %>
 			</div>
@@ -54,7 +54,7 @@
 </div>
 <%= yield %>
 <div id="footer-wrapper">
-	<div class="wrapper">Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes, Telefone: (027) 3322-7707, contato@esplendidocerimonial.com.br </div>
+	<div class="wrapper">Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes, Telefone: (027) 3322-7707, <%= link_to  "contato@esplendidocerimonial.com.br" %> </div>
 </div>
 <div id="fb-root"></div>
 <br>
