@@ -1,6 +1,6 @@
 Esplendido::Application.routes.draw do
 
-#root :to => "cerimonial#index"
+root :to => "cerimonial#index"
 
 get "cerimonial/index"
 get "cerimonial/espaco"
