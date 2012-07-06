@@ -53,15 +53,6 @@ background-position: center bottom;
 /*border-bottom: 1px solid #cfc6b3;*/
 }
 
-#fotos-intro{
-position: relative;
-width: 960px;
-height: 395px;
-margin: 0 auto;
-padding: 55px 0px 0px 0px;
-}
-
-
 #fotos-intro-pattern{
 width: 100%;
 position: relative;
@@ -88,7 +79,7 @@ margin: 0 auto;
 top: 0px;
 position: absolute;
 background-color: #ffffff;
-width: 800px;
+width: 845px;
 height: 400px;
 border: 2px solid #e1ddd1;
 padding: 17px;
@@ -113,21 +104,26 @@ padding: 0px 0px 5px 0px;
 #box-texto span{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
+
 }
 
 #box-localizacao{
 top: 0px;
 position: absolute;
 background-color: #ffffff;
-width: 800px;
-height: 700px;
+width: 845px;
+height: 600px;
 border: 2px solid #e1ddd1;
 padding: 17px;
 margin: 50px 0px 0px 40px;
 font-size: 13px;
 line-height: 20px;
 z-index: 1000;
+
+}
+
+#box-mapa{
+text-align:center;
 
 }
 
@@ -145,7 +141,7 @@ padding: 0px 0px 5px 0px;
 #box-localizacao span{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
+
 }
 
 #box-contato{
@@ -177,7 +173,7 @@ padding: 0px 0px 5px 0px;
 #box-contato span{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
+
 }
 
 #box-contato-informacoes{
@@ -185,7 +181,7 @@ top: 0px;
 left:470px;
 position: absolute;
 background-color: #ffffff;
-width: 300px;
+width: 380px;
 height: 400px;
 border: 2px solid #e1ddd1;
 padding: 17px;
@@ -210,7 +206,7 @@ padding: 0px 0px 5px 0px;
 #box-contato-informacoes span{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
+
 }
 
 
@@ -246,7 +242,7 @@ padding: 0px 0px 5px 0px;
 #box-home-menu span{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
+
 }
 
 #box-home-menu ul{
@@ -329,7 +325,6 @@ padding: 5px 0px 5px 0px;
 #contact-parking{
 font-size: 11px;
 color: #a49c94;
-font-style: italic;
 /*background-image: url(../img/icon-parking.gif);*/
 background-repeat: no-repeat;
 padding: 0px 0px 5px 20px;
@@ -372,7 +367,7 @@ float: left;
 width: 450px;
 padding: 27px 0px 0px 0px;
 margin: 0px 0px 0px 30px;
-font-style: italic;
+
 }
 
 .tweet_first{

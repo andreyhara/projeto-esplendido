@@ -1,11 +1,13 @@
 <div id="home-intro-pattern">
 	<div id="ahome-intro-wrapper">
     <div id="home-intro">
-      <div id="home-content">
-	      <div id="box-contato">
-	      <div id="respond" class="post-comments comment-form">
+        <div id="box-contato">
+
+	      <div id="respond" >
 		      <h2>Envia sua mensagem</h2>
 
+		      <br>
+		      <%= form_tag({:controller=>"cerimonial", :action=>"send_email"}, :method => "get")  do %>
             <table>
             <tr>
               <th><%= label_tag :Nome %></th>
@@ -22,15 +24,19 @@
             </tr>
             <tr>
               <th><%= label_tag :Mensagem %></th>
-              <td><%= text_area_tag :observacao  %></td>
+              <td><%= text_area_tag :mensagem, nil, :rows => 10, :cols => 40  %></td>
             </tr>
+
             <tr>
               <td></td>
-              <td><%= submit_tag "Enviar"  %></td>
+              <td><%= submit_tag "Enviar", :disable_with => "aguarde..." %><div id="mensagem_contato"><%=@mensagem_sucesso unless @mensagem_sucesso.blank?%></div></td>
             </tr>
             </table>
+            <% end %>
+
 	          </div>
           </div>
+
 	        <div id="box-contato-informacoes">
 			            <h3>Informações</h3>
 			            <p>
@@ -43,7 +49,8 @@
 			            Email: <a href="mailto:contato@esplendidocerimonial.com.br" title="E-mail contato@esplendidocerimonial.com.br">contato@esplendidocerimonial.com.br</a>
                   </p><br>
 	         </div>
-	    </div>
+
+
 		</div>
 	</div>
 </div>
