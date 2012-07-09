@@ -33,7 +33,7 @@ class CerimonialController < ApplicationController
     gmail.deliver do
       from "#{email}"
       to "contato@esplendidocerimonial.com.br"
-      cc "andreyhara@gmail.com"
+      cc "nequirandrade@gmail.com"
       subject "#{assunto}"
 
       text_part do
