@@ -41,7 +41,7 @@ class CerimonialController < ApplicationController
       end
 
       html_part do
-        body "Enviado por:#{nome}\n\nEmail:#{email}\n\nAssunto:#{assunto}\n\nMensagem:#{mensagem}"
+        body "Enviado por: #{nome}\n\nEmail: #{email}\n\nAssunto: #{assunto}\n\nMensagem: #{mensagem}"
       end
     end
 
