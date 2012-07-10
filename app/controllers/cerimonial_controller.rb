@@ -23,10 +23,11 @@ class CerimonialController < ApplicationController
 
   def send_email
 
-    nome = params["nome"]
-    email = params["email"]
-    assunto = "Mensagem Esplendido - " + params["assunto"].to_s
-    mensagem = params["mensagem"]
+    nome        = params["nome"]
+    email       = params["email"]
+    assunto     = "Mensagem Esplendido - " + params["assunto"].to_s
+    mensagem    = params["mensagem"]
+    telefone    = params["telefone"]
 
     gmail = Gmail.connect("esplendidocerimonial@esplendidocerimonial.com.br", "h7Y3n9F3")
 
@@ -41,7 +42,7 @@ class CerimonialController < ApplicationController
       end
 
       html_part do
-        body "Enviado por: #{nome}\n\nEmail: #{email}\n\nAssunto: #{assunto}\n\nMensagem: #{mensagem}"
+        body "Enviado por: #{nome}\n\nEmail: #{email}\n\nTelefone: #{telefone}\n\nAssunto: #{assunto}\n\nMensagem: #{mensagem}"
       end
     end
 
