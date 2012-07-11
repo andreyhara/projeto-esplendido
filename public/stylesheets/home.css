@@ -473,3 +473,24 @@ border-top: 1px solid #cfc6b3;
 background-color: #dddacf;
 }
 
+/*Inserido por andrey para links*/
+a.classlink:link{
+text-decoration:none;
+color:white;
+}
+
+a.classlink:visited{
+text-decoration:none;
+color:white;
+}
+
+a.classlink:hover{
+text-decoration:none;
+color:white;
+}
+
+a.classlink:active{
+text-decoration:none;
+color:white;
+}
+
