@@ -4,6 +4,10 @@ class CerimonialController < ApplicationController
 
   end
 
+  def teste
+
+  end
+
   def fotos
 
   end
