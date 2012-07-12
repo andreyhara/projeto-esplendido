@@ -13,23 +13,19 @@
   <%= javascript_include_tag "home.js" %>
   <%= javascript_include_tag "jquery.ui.js" %>
   <%= javascript_include_tag "jquery-latest.min.js" %>
-  <%= javascript_include_tag "slides.min.jquery.js" %>
-  <%= javascript_include_tag "swfobject.js" %>
-  <%= javascript_include_tag "twitter.js" %>
+
   <%= javascript_include_tag "../javascripts/booklet/jquery-1.4.4.min.js" %>
   <%= javascript_include_tag "../javascripts/booklet/jquery.booklet.1.1.0.js" %>
   <%= javascript_include_tag "../javascripts/booklet/jquery.booklet.1.1.0.min.js" %>
   <%= javascript_include_tag "../javascripts/booklet/jquery.easing.1.3.js" %>
 
-
-
 </head>
 <body class="home">
-<div id="top-container">
-	<div id="header-wrapper">
-		<div id="header">
-   		<%= link_to image_tag("../images/Logo(1).png", :border=>0),{ :controller=> "cerimonial", :action => 'index'} %>
-		</div>
+  <div id="top-container">
+	  <div id="header-wrapper">
+		  <div id="header">
+		    <%= link_to image_tag("../images/Logo(1).png", :border=>0),{ :controller=> "cerimonial", :action => 'index'} %>
+		  </div>
 	</div>
 	<div id="menu-wrapper">
 		<div id="menu">
