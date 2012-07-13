@@ -21,11 +21,17 @@
 		</div>
 	  <div id="menu">
 	  <br>
-     			<%= link_to  "Esplêndido", {:controller=>"cerimonial", :action=>"index" } %>
-     			<%= link_to  "Galeria de Fotos", {:controller=>"cerimonial", :action=>"fotos" },:class=>"class_link_menu" %>
-     			<%= link_to  "Serviços", {:controller=>"cerimonial", :action=>"servicos" },:class=>"class_link_menu" %>
-     			<%= link_to  "Localização", {:controller=>"cerimonial", :action=>"localizacao" },:class=>"class_link_menu" %>
-     			<%= link_to  "Contato", {:controller=>"cerimonial", :action=>"contato" },:class=>"class_link_menu" %>
+	  <table  width="100%">
+	  <tr>
+<td width="25%" align="right">
+     		<td width="10%" align="center">	<%= link_to  "Esplêndido", {:controller=>"cerimonial", :action=>"index" }, :class=>"class_link_menu" %> </td>
+     		<td width="10%" align="center">	<%= link_to  "Galeria de Fotos", {:controller=>"cerimonial", :action=>"fotos" },:class=>"class_link_menu" %></td>
+     		<td width="10%" align="center">	<%= link_to  "Serviços", {:controller=>"cerimonial", :action=>"servicos" },:class=>"class_link_menu" %></td>
+     		<td width="10%" align="center">	<%= link_to  "Localização", {:controller=>"cerimonial", :action=>"localizacao" },:class=>"class_link_menu" %></td>
+     		<td width="10%" align="center">	<%= link_to  "Contato", {:controller=>"cerimonial", :action=>"contato" },:class=>"class_link_menu" %></td>
+<td width="25%" align="right">
+     			</tr>
+		</table>
     </div>
   <%= yield %>
   <div id="rodape"><br>
