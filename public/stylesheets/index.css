@@ -7,11 +7,11 @@
 }
 
 .csstable_principal {
-	left:20%;
 	width: 100%;
 	position:relative;
 	height:700px;
   vertical-align:top;
+  text-align:center;
 
 }
 
