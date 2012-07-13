@@ -13,6 +13,8 @@ get "cerimonial/contato"
 get "cerimonial/send_email"
 get "cerimonial/teste"
 
+post "cerimonial/send_email"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

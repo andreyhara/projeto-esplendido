@@ -1,67 +1,65 @@
-<div id="home-intro-pattern">
-	<div id="ahome-intro-wrapper">
-    <div id="home-intro">
-        <div id="box-contato">
+<table class="csstable_contato">
+  <tr>
+  <td align="right">
+    <div id="informacoes-contato">
+    <br>
+    <h3>Contato</h3>
+    <br>
 
-	      <div id="respond" >
-		      <h2>Envie sua mensagem</h2>
-
-		      <br>
-		      <%= form_tag({:controller=>"cerimonial", :action=>"send_email"}, :method => "get")  do %>
-            <table>
-            <tr>
-              <th><%= label_tag :Nome %></th>
-              <td><%= text_field_tag :nome  %></td>
-            </tr>
-            <tr>
-              <th><%= label_tag :Email %></th>
-              <td><%= text_field_tag :email %></td>
-            </tr>
-            <tr>
-              <th><%= label_tag :Telefone %></th>
-              <td><%= text_field_tag :telefone %></td>
-            </tr>
-
-            <tr>
-              <th><%= label_tag :Assunto %></th>
-              <td><%= text_field_tag :assunto %></td>
-            </tr>
-            <tr>
-              <th><%= label_tag :Mensagem %></th>
-              <td><%= text_area_tag :mensagem, nil, :rows => 10, :cols => 40  %></td>
-            </tr>
-
-            <tr>
-              <td></td>
-              <td><%= submit_tag "Enviar", :disable_with => "aguarde..." %><div id="mensagem_contato"><%=@mensagem_sucesso unless @mensagem_sucesso.blank?%></div></td>
-            </tr>
-            </table>
-            <% end %>
-
-	          </div>
-          </div>
-
-	        <div id="box-contato-informacoes">
-			            <h3>Informações</h3>
-			            <p>
-			            Endereço: Rua Santa Rita de Cassia, 415 - Bairro de Lourdes
-                  </p><br>
-                  <p>
-			            Telefone: (027) 3322-7707
-                  </p><br>
-                                    <p>
-			            Email: <a href="mailto:contato@esplendidocerimonial.com.br" title="E-mail contato@esplendidocerimonial.com.br">contato@esplendidocerimonial.com.br</a>
-                  </p><br>
-	         </div>
+    Esplêndido Cerimonial<br>
+    Rua Santa Rita de Cassia, 415<br>
+    Bairro de Lourdes - Vitória - ES<br>
+    CEP 29042-753<br><br>
 
 
-		</div>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+    Telefone: (027) 3322-7707<br><br>
+    Email: <a href="mailto:contato@esplendidocerimonial.com.br" title="E-mail contato@esplendidocerimonial.com.br">contato@esplendidocerimonial.com.br</a>
+    <br><br>
+
+    Horário de funcionamento:<br>
+    Segunda a sexta-feira das 9 às 20 horas<br>
+    Sábado: das 9 às 13 horas<br>
+
+    </div>
+  </td>
+  <td align="left">
+    <div id="formulario-contato">
+    <br>
+  <h3>Envie sua mensagem</h3>
+  <br>
+  <%= form_tag({:controller=>"cerimonial", :action=>"send_email"}, :metdod => "get") do %>
+  <table>
+    <tr>
+      <td>Nome:</td>
+      <td><%= text_field_tag :nome, nil,:size => 40 %></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><%= text_field_tag :email, nil,:size => 40 %></td>
+    </tr>
+    <tr>
+      <td>Telefone:</td>
+      <td><%= text_field_tag :telefone, nil,:size => 40 %></td>
+    </tr>
+    <tr>
+      <td>Assunto:</td>
+      <td><%= text_field_tag :assunto, nil,:size => 40 %></td>
+    </tr>
+    <tr>
+      <td>Mensagem:</td>
+      <td><%= text_area_tag :mensagem, nil, :rows => 10, :cols => 40 %></td>
+    </tr>
+  <tr>
+    <td></td>
+    <td><%= submit_tag "Enviar", :disable_witd => "aguarde..." %></td>
+  </tr>
+  </table>
+  <% end %>
+  <br>
+  <div id="mensagem_contato"><%=@mensagem_sucesso unless @mensagem_sucesso.blank?%></div>
+  </div>
+  </td>
+  </tr>
+</table>
 
