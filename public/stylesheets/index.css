@@ -207,7 +207,8 @@ body{
 	position: relative;
 	width: 100%;
 	height: 484px;
-	background-image: url(../images/PRINCIPAL.png);
+	/*background-image: url(../images/PRINCIPAL.png);*/
+	background-image: url(../images/esplendido.jpg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 
